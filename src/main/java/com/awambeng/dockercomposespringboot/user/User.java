@@ -1,6 +1,6 @@
 package com.awambeng.dockercomposespringboot.user;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Data
@@ -9,7 +9,7 @@ import lombok.*;
 public class User{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
